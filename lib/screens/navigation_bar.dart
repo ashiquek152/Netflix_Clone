@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:netflix_tmdb/widgets/colors.dart';
 import 'package:netflix_tmdb/screens/screen_search.dart';
@@ -22,10 +23,11 @@ class _FooterBarState extends State<FooterBar> {
     const Downloads()
   ];
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: pages[selectedItem],
+      body:pages[selectedItem],
       backgroundColor: black,
       resizeToAvoidBottomInset: false,
       bottomNavigationBar: BottomNavigationBar(
@@ -58,10 +60,8 @@ class _FooterBarState extends State<FooterBar> {
           ),
           BottomNavigationBarItem(
             backgroundColor: white,
-            icon: IconWidget(
-                icon: Icons.search,
-                iconColor: white,
-                iconSize: 30),
+            icon:
+                IconWidget(icon: Icons.search, iconColor: white, iconSize: 30),
             label: 'Search',
           ),
           BottomNavigationBarItem(
@@ -75,4 +75,6 @@ class _FooterBarState extends State<FooterBar> {
       ),
     );
   }
+
+ 
 }

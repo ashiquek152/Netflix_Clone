@@ -18,6 +18,7 @@ class _HomeState extends State<Home> {
   List topRatedMoviesFetched = [];
   List tvShowsFetched = [];
   List nowPlayingMovies = [];
+  // final internetCheck= InternetCheck();
 
   @override
   void initState() {
@@ -28,6 +29,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
+    // internetCheck.checkConnection();
     return Scaffold(
       backgroundColor: black,
       body: Padding(

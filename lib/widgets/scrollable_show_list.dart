@@ -90,11 +90,11 @@ class ScrollableRowList extends StatelessWidget {
                             color: white,
                             borderRadius: BorderRadius.circular(6),
                           ),
-                          child: Center(
-                            child: Textwidget(
-                                text: "Loading...",
-                                color: Colors.blue,
-                                fontsize: 12),
+                          child: const Center(
+                            child:
+                            CircularProgressIndicator(
+                              color: red,
+                            ), 
                           ),
                         ),
                       )),
